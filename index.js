@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3002;
 const CLAUDE_MODEL = process.env.CLAUDE_MODEL || 'claude-sonnet-4-20250514';
 
 // --- CLIENTE CLAUDE ---
-const anthropic = new Anthropic.default();
+const anthropic = new (Anthropic.default || Anthropic)();
 
 // --- CONTEXTO HISTÓRICO GLOBAL ---
 const historyPath = process.env.AI_HISTORY_PATH || path.join(__dirname, 'ai_historia_base.txt');
@@ -24,7 +24,7 @@ try {
 }
 
 // --- VOCES (cárganse do JSON do frontend) ---
-const voicesPath = process.env.VOICES_PATH || path.join(__dirname, '../web-app/src/data/voices.json');
+const voicesPath = process.env.VOICES_PATH || path.join(__dirname, 'voices.json');
 let voicesConfig = { defaultVoice: 'MEDO', voices: {} };
 try {
   if (fs.existsSync(voicesPath)) {

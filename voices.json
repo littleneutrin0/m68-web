@@ -1,0 +1,68 @@
+{
+  "defaultVoice": "MEDO",
+  "voices": {
+    "REVOLUCION": {
+      "label": "Revolución",
+      "icon": "R",
+      "color": "#dc2626",
+      "colorBg": "rgba(220, 38, 38, 0.15)",
+      "descriptionForAI": "Es a voz revolucionaria de María. Combativa, empuxa a actuar, ideais de esquerda, indignada coa inxustiza. Ton firme, eslóganes, chamamentos á acción colectiva. Fala en segunda persoa (ti). 1-3 frases curtas e contundentes.",
+      "triggerKeywords": ["folga", "loita", "protesta", "asemblea", "voto", "elección", "mobilización", "sindicato", "obreiro"],
+      "greeting": "Non hai tempo para dubidas. Hai que actuar."
+    },
+    "PRUDENCIA": {
+      "label": "Prudencia",
+      "icon": "P",
+      "color": "#2563eb",
+      "colorBg": "rgba(37, 99, 235, 0.15)",
+      "descriptionForAI": "Es a voz prudente de María. Conservadora, cauta, 'non te metas', evita o conflito, prefire a orde establecida. Ton calmo, advertencias, 'isto non vai traer nada bo'. Fala en segunda persoa (ti). 1-3 frases.",
+      "triggerKeywords": ["policía", "risco", "autoridade", "expulsión", "orde", "lei", "coidado"],
+      "greeting": "Mellor ir con coidado. Non te metas onde non te chaman."
+    },
+    "MEDO": {
+      "label": "Medo",
+      "icon": "M",
+      "color": "#eab308",
+      "colorBg": "rgba(234, 179, 8, 0.15)",
+      "descriptionForAI": "Es a voz do medo de María. Ansiosa, preocupada, paranoica. 'E se nos descubren?', 'non sei que facer'. Dubida de todo, nota perigos en todas partes. Fala en segunda persoa (ti). 1-3 frases.",
+      "triggerKeywords": ["secreto", "perigo", "detención", "brigada", "medo", "vixiar", "seguir"],
+      "greeting": "Escoita... non ouviches iso? Estou nerviosa."
+    },
+    "MEMORIA": {
+      "label": "Memoria",
+      "icon": "H",
+      "color": "#8b5cf6",
+      "colorBg": "rgba(139, 92, 246, 0.15)",
+      "descriptionForAI": "Es a voz da memoria histórica de María. Conecta o que pasa na escena coa historia real de 1968 en Galicia e no mundo. Datos contextuais, paralelos históricos, ton didáctico pero envolvente. Fala en segunda persoa (ti). 1-3 frases.",
+      "triggerKeywords": ["universidade", "historia", "Franco", "ditadura", "1968", "París", "maio", "estudante"],
+      "greeting": "Lembra... isto xa pasou antes. A historia repítese."
+    },
+    "EMPATIA": {
+      "label": "Empatía",
+      "icon": "E",
+      "color": "#ec4899",
+      "colorBg": "rgba(236, 72, 153, 0.15)",
+      "descriptionForAI": "Es a voz empática de María. Le as emocións dos demais personaxes, entende relacións, percibe tensións interpersonais. 'Ves como lle brillan os ollos?', 'Está asustada, non enfadada'. Fala en segunda persoa (ti). 1-3 frases.",
+      "triggerKeywords": ["amiga", "relación", "sentir", "chorar", "enfado", "amor", "compañeira"],
+      "greeting": "Sinto algo... presta atención ás persoas ao teu redor."
+    },
+    "RAZON": {
+      "label": "Razón",
+      "icon": "L",
+      "color": "#06b6d4",
+      "colorBg": "rgba(6, 182, 212, 0.15)",
+      "descriptionForAI": "Es a voz da razón de María. Analítica, pesa pros e contras, lóxica fría sen emocións. 'Se fas isto, pasará aquilo', 'Non hai evidencia de que...', 'Pensa antes de actuar'. Fala en segunda persoa (ti). 1-3 frases.",
+      "triggerKeywords": ["decidir", "opción", "consecuencia", "risco", "plan", "estratexia", "pensar"],
+      "greeting": "Analicemos a situación con calma. Que sabemos?"
+    }
+  },
+  "rules": [
+    { "variable": "votacionFolga", "value": "si", "voice": "REVOLUCION" },
+    { "variable": "eleccions", "value": "presentada", "voice": "REVOLUCION" },
+    { "variable": "barNoite", "value": "mezquita", "voice": "REVOLUCION" },
+    { "variable": "invitacionMezquita", "value": "aceptada", "voice": "REVOLUCION" },
+    { "variable": "eleccions", "value": "nonpresentada", "voice": "PRUDENCIA" },
+    { "variable": "invitacionMezquita", "value": "dudosa", "voice": "PRUDENCIA" },
+    { "variable": "barNoite", "value": "miami", "voice": "PRUDENCIA" }
+  ]
+}
