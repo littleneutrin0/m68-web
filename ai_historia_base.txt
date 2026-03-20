@@ -1,0 +1,21 @@
+// CONTEXTO HISTÓRICO GLOBAL PARA A IA DE "MARZO 68"
+// --------------------------------------------------------------------
+// En 1968, Galicia vive baixo a ditadura franquista. A universidade
+// de Santiago é un foco de protesta estudantil, conectada coas loitas
+// obreiras e cos movementos contra a guerra de Vietnam. A policía
+// secreta (brigada político-social) controla as asembleas, infiltra
+// delatores e reprime con violencia as manifestacións. Calquera
+// folga pode rematar en expulsión da facultade, detencións ou peor.
+//
+// O movemento estudantil galego está vinculado ao nacionalismo galego
+// e á loita pola democracia. As asembleas son clandestinas, os
+// panfletos imprímense en secreto. Hai conexión cos movementos
+// obreiros de Vigo e Ferrol. A censura impide que os xornais
+// informen da realidade. As mulleres participan activamente pero
+// son invisibilizadas nas crónicas oficiais.
+//
+// Santiago de Compostela é unha cidade pequena onde todo o mundo se
+// coñece. A universidade é o centro da vida social e política.
+// Os bares como o Miami ou a Mezquita son puntos de encontro.
+// A pensión onde viven as estudantes é un espazo de liberdade
+// relativa pero tamén de vixilancia.
